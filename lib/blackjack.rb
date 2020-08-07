@@ -50,10 +50,12 @@ end
 
 def runner
   welcome
-  initial_round
-  prompt_user
-  get_user_input
-  hit?(current_total)
+  total = initial_round
+
+  until total >= 21 do
+    total = hit?(total)
+  end
+  end_game(total)
   
   
   

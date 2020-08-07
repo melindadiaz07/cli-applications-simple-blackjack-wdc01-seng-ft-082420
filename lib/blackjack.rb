@@ -33,8 +33,8 @@ def hit?(current_total)
   get_user_input
   break if get_user_input == "s"
   return deal_card if get_user_input == "h"
-  else invalid_command
-  end
+   invalid_command
+  
     
 end
 
